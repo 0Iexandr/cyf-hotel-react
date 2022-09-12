@@ -4,22 +4,35 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 2.25em;
 }
 
 .App-header {
+  display: flex;
+  align-items: center;
+  column-gap: 0.6em;
   background-color: #222;
-  height: 50px;
   padding: 20px;
-  color: white;
+  color: rgb(230, 230, 230);
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: bold;
 }
 
+.App-header h1 {
+  margin: 0;
+}
+
 .App-title {
   font-size: 1.5em;
+}
+
+.cards-container {
+  display: flex;
+  column-gap: 7.5em;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .App-content {
@@ -35,23 +48,80 @@
     transform: rotate(360deg);
   }
 }
+
 .search {
   padding: 5px 0 20px 0;
-}
-
-tr {
-  color: #5b5757;
 }
 
 .results {
   padding-top: 15px;
 }
 
-.footer {
-  padding-top: 20px;
+.table {
+  width: 69em;
+}
+
+th {
+  color: #5b5757;
+}
+
+td {
+  color: #5b5757;
+  cursor: pointer;
+}
+
+.App-footer {
+  background-color: #222;
+  color: rgb(200, 200, 200);
+  padding: 10px;
   text-align: center;
+  font-size: 1em;
+}
+
+.App-footer ul {
+  list-style: none;
+  margin: 0;
+}
+
+.App-footer li {
+  margin: 0.4em;
 }
 
 .card {
-  width: 18rem;
+  width: 18em;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-city-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3151ef;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #5b5757;
+}
+
+.restaurant-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurant-orders li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1em;
+  margin: 0.6em;
+}
+
+.highlighted-row {
+  background-color: rgb(229, 238, 255);
 }
